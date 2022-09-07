@@ -1,5 +1,25 @@
 # Flash-Pop
 
+# 新版本:
+
+
+
+与链接 `https://github.com/luckseal/go-shellcode-loader` 免杀程序结合，实现在木马在运行时，目标浏览器不弹窗，在木马未运行时，目标浏览器弹窗。
+
+
+
+实现原理：
+
+改造木马使其在本地开启http服务
+
+改造flash钓鱼程序，探测目标本地是否开启http服务，如开启则不弹窗
+
+
+
+# 老版本:
+
+
+
 Flash钓鱼弹窗版
 
 ![](https://raw.githubusercontent.com/r00tSe7en/pictures/master/flashpop.png)
@@ -12,7 +32,7 @@ Flash钓鱼弹窗版
 
 特别感谢：https://layer.layui.com/
 
-# 感谢:
+## 感谢:
 
 [@鲁人甲007](https://www.t00ls.net/members-profile-6993.html) 的提醒，已经将图片加载方式更改为加载base64编码后的图片，减少了HTTP请求，加快图像的加载时间。
 
@@ -24,19 +44,19 @@ Flash钓鱼弹窗版
 
 [@0xTback](https://www.t00ls.net/members-profile-6271.html) 解决了ie浏览器下反引号报错问题，中文Unicode编码防止出现乱码。
 
-# 更新：
+## 更新：
 
-## 2020.09.18 11:02
+### 2020.09.18 11:02
 
 解决了ie浏览器下js中出现反引号报错的问题，中文采用Unicode编码防止出现乱码。
 
-## 2022.02.07
+### 2022.02.07
 
 删除本地依赖，加载的所有静态资源依赖均来自免费静态cdn服务。
 
 请以最新更新版本效果为准！！！
 
-# Licenses
+## Licenses
 
 本工具仅面向合法授权的企业安全建设行为，在使用本工具进行检测时，您应确保该行为符合当地的法律法规，并且已经取得了足够的授权。
 
